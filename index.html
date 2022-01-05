@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1 class="text-center mt-5 mb-5">Weather App</h1>
+    <div class="container-fluid">
+      <div class="row mt-5 d-flex justify-content-center">
+        <div class="col-auto">
+          <input
+            type="text"
+            id="inputValue"
+            class="form-control"
+            placeholder="Enter a city name"
+          />
+        </div>
+        <div class="col-auto">
+          <button id="buttonSubmit" class="button btn btn-primary">
+            Search
+          </button>
+        </div>
+        <div class="col-auto">
+          <button
+            id="buttonGeolocation"
+            class="buttonGeolocation btn btn-outline-primary"
+          >
+            My location
+          </button>
+        </div>
+      </div>
+
+      <!-- <div class="col mt-4 d-inline-flex">
+        <input
+          type="text"
+          class="inputValue form-control flex-grow-1"
+          placeholder="Enter a city name"
+        />
+        <button class="button btn btn-primary">Search</button>
+        <button class="buttonGeolocation btn btn-outline-primary">
+          My location
+        </button>
+      </div> -->
+
+      <div class="row">
+        <div class="col mt-4 text-center">
+          <h2 class="name"></h2>
+          <h3 class="date"></h3>
+          <h1 class="temp"></h1>
+          <div class="weather-icon"><img src="icons/unknown.png" /></div>
+          <h2 class="desc"></h2>
+          <h3 class="high_low"></h3>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
